@@ -1,12 +1,12 @@
 {
-  "name": "bootstrap-theme-themestrap-sample",
+  "name": "bootstrap-theme-amuzor",
   "version": "0.0.1",
   "private": true,
-  "author": "Your Name",
+  "author": "pthm",
   "main": "dist/bootstrap.css",
   "themestrap": {
-    "name": "Themestrap Sample",
-    "repo": "https://github.com/divshot/themestrap"
+    "name": "Amuzor",
+    "repo": "https://github.com/pthm/bootstrap-amuzor"
   },
   "ignore": [
     "**/.*",

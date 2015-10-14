@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>CSS &middot; Bootstrap</title><!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="../../dist/css/bootstrap.css">
+    <link href="less/theme.less" rel="stylesheet/less" type="text/css"><!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <link href="docs.css" rel="stylesheet" type="text/css"><!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+</head>
+
+<body>
+    <a class="sr-only" href="#content">Skip navigation</a> <!-- Docs master nav -->
+
+    <header class="navbar navbar-inverse navbar-fixed-top" role="banner">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse"><span class="sr-only">Toggle navigation</span></button> <a href="./" class="navbar-brand">Bootstrap Theme Kitchen Sink</a>
+            </div>
+
+            <nav class="collapse navbar-collapse" role="navigation">
+                <ul class="nav navbar-nav nav-pills">
+                    <li class="active"><a href="css.html">CSS</a></li>
+
+                    <li><a href="components.html">Components</a></li>
+
+                    <li><a href="js.html">JavaScript</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container bs-docs-container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="bs-sidebar hidden-print" role="complementary">
+                    <ul class="nav bs-sidenav">
+                        <li><a href="#type">Typography</a></li>
+
+                        <li><a href="#code">Code</a></li>
+
+                        <li><a href="#tables">Tables</a></li>
+
+                        <li><a href="#forms">Forms</a></li>
+
+                        <li><a href="#buttons">Buttons</a></li>
+
+                        <li><a href="#helper-classes">Close icon</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-9" role="main">
+                <!-- Typography
+  ================================================== -->
+
+                <div class="bs-docs-section">
+                    <div class="page-header">
+                        <h1 id="type">Typography</h1>
+                    </div><!-- Headings -->
+
+                    <h2 id="type-headings">Headings</h2>
+
+                    <div class="bs-example bs-example-type">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <h1>h1. Bootstrap heading</h1>
+                                    </td>
+
+                                    <td>Semibold 36px</td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <h2>h2. Bootstrap heading</h2>
+                                    </td>
+
+                                    <td>Semibold 30px</td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <h3>h3. Bootstrap heading</h3>
+                                    </td>
+
+                                    <td>Semibold 24px</td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <h4>h4. Bootstrap heading</h4>
+                                    </td>
+
+                                    <td>Semibold 18px</td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <h5>h5. Bootstrap heading</h5>
+                                    </td>
+
+                                    <td>Semibold 14px</td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <h6>h6. Bootstrap heading</h6>
+                                    </td>
+
+                                    <td>Semibold 12px</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div><!-- Body copy -->
+
+                    <h2 id="type-body-copy">Body copy</h2>
+
+                    <div class="bs-example">
+                        <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
+
+                        <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
+
+                        <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+                    </div><!-- Body copy .lead -->
+
+                    <h3>Lead body copy</h3>
+
+                    <div class="bs-example">
+                        <p class="lead">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.</p>
+                    </div><!-- Emphasis -->
+
+                    <h3>Emphasis classes</h3>
+
+                    <div class="bs-example">
+                        <p class="text-muted">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
+
+                        <p class="text-primary">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+
+                        <p class="text-success">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+
+                        <p class="text-info">Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+
+                        <p class="text-warning">Etiam porta sem malesuada magna mollis euismod.</p>
+
+                        <p class="text-danger">Donec ullamcorper nulla non metus auctor fringilla.</p>
+                    </div>
+
+                    <h3>Blockquotes</h3>
+
+                    <div class="bs-example" style="overflow: hidden;">
+                        <blockquote class="pull-right">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p><small>Someone famous in <cite title="Source Title">Source Title</cite></small>
+                        </blockquote>
+                    </div><!-- Code
+  ================================================== -->
+
+                    <div class="bs-docs-section">
+                        <div class="page-header">
+                            <h1 id="code">Code</h1>
+                        </div>
+
+                        <h2>Inline</h2>
+
+                        <div class="bs-example">
+                            For example, <code>&lt;section&gt;</code> should be wrapped as inline.
+                        </div>
+
+                        <h2>Basic block</h2>
+
+                        <div class="bs-example">
+                            <pre>
+&lt;p&gt;Sample text here...&lt;/p&gt;
+</pre>
+                        </div>
+                    </div><!-- Tables
+  ================================================== -->
+
+                    <div class="bs-docs-section">
+                        <div class="page-header">
+                            <h1 id="tables">Tables</h1>
+                        </div>
+
+                        <div class="bs-example">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+
+                                        <th>Column heading</th>
+
+                                        <th>Column heading</th>
+
+                                        <th>Column heading</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr class="active">
+                                        <td>1</td>
+
+                                        <td>Column content</td>
+
+                                        <td>Column content</td>
+
+                                        <td>Column content</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>2</td>
+
+                                        <td>Column content</td>
+
+                                        <td>Column content</td>
+
+                                        <td>Column content</td>
+                                    </tr>
+
+                                    <tr class="success">
+                                        <td>3</td>
+
+                                        <td>Column content</td>
+
+                                        <td>Column content</td>
+
+                                        <td>Column content</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>4</td>
+
+                                        <td>Column content</td>
+
+                                        <td>Column content</td>
+
+                                        <td>Column content</td>
+                                    </tr>
+
+                                    <tr class="warning">
+                                        <td>5</td>
+
+                                        <td>Column content</td>
+
+                                        <td>Column content</td>
+
+                                        <td>Column content</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>6</td>
+
+                                        <td>Column content</td>
+
+                                        <td>Column content</td>
+
+                                        <td>Column content</td>
+                                    </tr>
+
+                                    <tr class="danger">
+                                        <td>7</td>
+
+                                        <td>Column content</td>
+
+                                        <td>Column content</td>
+
+                                        <td>Column content</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div><!-- /example -->
+                    </div><!-- Forms
+  ================================================== -->
+
+                    <div class="bs-docs-section">
+                        <div class="page-header">
+                            <h1 id="forms">Forms</h1>
+                        </div>
+
+                        <form class="bs-example form-horizontal">
+                            <div class="form-group">
+                                <label for="inputEmail1" class="col-lg-2 control-label">Email</label>
+
+                                <div class="col-lg-10">
+                                    <input type="email" class="form-control" id="inputEmail1" placeholder="Email">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="inputPassword1" class="col-lg-2 control-label">Password</label>
+
+                                <div class="col-lg-10">
+                                    <input type="password" class="form-control" id="inputPassword1" placeholder="Password">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="inputEmail1" class="col-lg-2 control-label">Rating</label>
+
+                                <div class="col-lg-10">
+                                    <select class="form-control">
+                                        <option>
+                                            1
+                                        </option>
+
+                                        <option>
+                                            2
+                                        </option>
+
+                                        <option>
+                                            3
+                                        </option>
+
+                                        <option>
+                                            4
+                                        </option>
+
+                                        <option>
+                                            5
+                                        </option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="inputEmail1" class="col-lg-2 control-label">Username</label>
+
+                                <div class="col-lg-10">
+                                    <input class="form-control" id="focusedInput" type="text" value="This is focused...">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="inputEmail1" class="col-lg-2 control-label">Date</label>
+
+                                <div class="col-lg-10">
+                                    <input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here…" disabled> <span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+                                </div>
+                            </div>
+
+                            <div class="form-group has-success">
+                                <label for="inputSuccess" class="col-lg-2 control-label">Success</label>
+
+                                <div class="col-lg-10">
+                                    <input type="text" class="form-control" id="inputSuccess">
+                                </div>
+                            </div>
+
+                            <div class="form-group has-warning">
+                                <label for="inputWarning" class="col-lg-2 control-label">Warning</label>
+
+                                <div class="col-lg-10">
+                                    <input type="text" class="form-control" id="inputWarning">
+                                </div>
+                            </div>
+
+                            <div class="form-group has-error">
+                                <label for="inputDanger" class="col-lg-2 control-label">Danger</label>
+
+                                <div class="col-lg-10">
+                                    <input type="text" class="form-control" id="inputDanger">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-lg-offset-2 col-lg-10">
+                                    <button type="submit" class="btn btn-default">Sign in</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div><!-- Buttons
+  ================================================== -->
+
+                    <div class="bs-docs-section">
+                        <div class="page-header">
+                            <h1 id="buttons">Buttons</h1>
+                        </div>
+
+                        <div class="bs-example">
+                            <button type="button" class="btn btn-default">Default</button> <button type="button" class="btn btn-primary">Primary</button> <button type="button" class="btn btn-success">Success</button> <button type="button" class="btn btn-info">Info</button> <button type="button" class="btn btn-warning">Warning</button> <button type="button" class="btn btn-danger">Danger</button> <button type="button" class="btn btn-link">Link</button>
+                        </div>
+                    </div><!-- Helpers
+  ================================================== -->
+
+                    <div class="bs-docs-section">
+                        <div class="page-header">
+                            <h1 id="helper-classes">Close button</h1>
+                        </div>
+
+                        <div class="bs-example">
+                            <p><button type="button" class="close" aria-hidden="true">&times;</button></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- JS and analytics only. -->
+        <!-- Bootstrap core JavaScript
+================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/less.js/1.4.1/less.min.js">
+</script> <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js">
+</script> <script type="text/javascript">
+!window.jQuery && document.write('<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"><\/script>')
+        </script> <script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js">
+</script> <script type="text/javascript" src="docs.js">
+</script>
+    </div>
+</body>
+</html>

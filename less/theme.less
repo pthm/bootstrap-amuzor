@@ -8,7 +8,221 @@
  * This theme was built using the Themestrap Bootstrap Theme Kit.
  * https://github.com/divshot/themestrap
  */
-
 @import "bootstrap.less";
 
+h1,h2,h3,h4,h5,h6 {
+  color: #bfc1c4;
+  font-weight:bold;
+}
+
+a:focus {
+  outline-color: transparent;
+  outline-style: none;
+}
+
 // Add CSS Customizations to your theme here.
+
+.btn, .panel, .panel-heading, .modal-header, .panel-footer, .list-group-item, .pagination > li, .pager > li {
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.05);
+  -moz-box-shadow: inset 0 1px rgba(255, 255, 255, 0.05);
+  -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.05);
+}
+
+.pagination > li > a {
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.05),inset -1px 0 rgba(255, 255, 255, 0.04);
+  -moz-box-shadow: inset 0 1px rgba(255, 255, 255, 0.05),inset -1px 0 rgba(255, 255, 255, 0.04);
+  -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.05),inset -1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.well, pre, .dropdown-menu, .jumbotron {
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), 0 0 5px 1px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), 0 0 5px 1px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), 0 0 5px 1px rgba(0, 0, 0, 0.1);
+}
+
+.label {
+  border: 1px solid #222323;
+  box-shadow: inset -1px -1px rgba(255, 255, 255, 0.07), inset 1px 1px rgba(255, 255, 255, 0.07);
+  -moz-box-shadow: inset -1px -1px rgba(255, 255, 255, 0.07), inset 1px 1px rgba(255, 255, 255, 0.07);
+  -webkit-box-shadow: inset -1px -1px rgba(255, 255, 255, 0.07), inset 1px 1px rgba(255, 255, 255, 0.07);
+}
+
+body {
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.6);
+}
+
+.bubble {
+  text-size: 16px !important;
+  line-height: 1.6em;
+  font-weight: 300;
+  margin-left: 15px;
+  position: relative;
+  padding: 10px 15px;
+  background: #3a3c42;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  border: 1px solid #27292c;
+  border-top-color: #292b2e;
+  border-top-width: 3px;
+  -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, .15);
+  -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, .15);
+  box-shadow: 0 1px 10px rgba(0, 0, 0, .15)
+}
+
+.bubble-reply {
+  padding: 0
+}
+
+.bubble-reply textarea {
+  background: #3a3c42 !important;
+  padding: 10px 15px;
+  border: transparent;
+  resize: vertical;
+  outline-style: none;
+}
+
+.bubble-reply textarea:focus {
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline-color: transparent;
+  outline-style: none;
+  outline:none;
+}
+
+.bubble:after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 10px 10px 10px 0;
+  border-color:transparent #3a3c42
+;
+  display: block;
+  width: 0;
+  z-index: 1;
+  left: -10px;
+  top: 7px
+}
+
+.bubble:before {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent rgba(0, 0, 0, .15);
+  display: block;
+  width: 0;
+  z-index: 0;
+  left: -11px;
+  top: 7px
+}
+
+.forum-badge {
+  margin-top: 11px
+}
+
+.forum-head img{
+  margin-bottom: 5px;
+  width: 64px;
+  height: 64px;
+  background: #000;
+}
+
+.forum-head{
+  padding-bottom:2px;
+}
+
+.forum-head:hover {
+  text-decoration: none
+}
+
+iframe{
+  width:100%;
+}
+
+.jumbotron-home{
+  background:url('/img/jumbohome.jpg');
+  background-size: cover;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.jumbotron-home .brand-text{
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+}
+
+.heading-vert{
+  margin-top:10px;
+}
+
+.amuzor-sidebar{
+  background-color: transparent;
+  border-right: 1px solid #34363a;
+  box-shadow: inset -7px 0 10px -5px rgba(0,0,0,.06);
+  -moz-box-shadow: inset -7px 0 10px -5px rgba(0,0,0,.06);
+  -webkit-box-shadow: inset -7px 0 10px -5px rgba(0,0,0,.06);
+}
+
+.amuzor-sidebar:before{
+  content:'';
+  background-color: rgba(62,65,70,0);
+  background-image: -moz-linear-gradient(#3e4146, rgba(62,65,70,0));
+  background-image: -webkit-linear-gradient(#3e4146, rgba(62,65,70,0));
+  background-image: linear-gradient(#3e4146, rgba(62,65,70,0));
+  background-repeat: repeat-x;
+  background-color: transparent;
+  position:absolute;
+  width: 10px;
+  height: 100px;
+  top: 0;
+  right: 0;
+  margin-right: -5px;
+}
+
+.amuzor-sidebar:after{
+  content:'';
+  background-color: rgba(62,65,70,0);
+  background-image: -moz-linear-gradient(0deg, #3e4146, rgba(62,65,70,0));
+  background-image: -webkit-linear-gradient(0deg, #3e4146, rgba(62,65,70,0));
+  background-image: linear-gradient(0deg, #3e4146, rgba(62,65,70,0));
+  background-repeat: repeat-x;
+  background-color: transparent;
+  position:absolute;
+  width: 10px;
+  height: 100px;
+  bottom: 0;
+  right: 0;
+  margin-right: -5px;
+}
+
+.modal-content{
+  background-color: #3a3c42;
+}
+
+.modal-header{
+  background-color: #292b2e;
+  border-bottom: 1px solid #27292c;
+}
+
+.label{
+  box-shadow: inset -1px -1px rgba(255,255,255,0.07),inset 1px 1px rgba(255,255,255,0.07);
+  -moz-box-shadow: inset -1px -1px rgba(255,255,255,0.07),inset 1px 1px rgba(255,255,255,0.07);
+  -webkit-box-shadow: inset -1px -1px rgba(255,255,255,0.07),inset 1px 1px rgba(255,255,255,0.07);
+  background-image: linear-gradient(0deg, rgba(62,65,70,0.3), rgba(62,65,70,0));
+}
+
+.navbar-nav > li > a{
+  line-height: 25px;
+}
+
+.navbar-brand{
+  line-height: 25px;
+}
+
+.navbar-text{
+  line-height: 25px;
+}

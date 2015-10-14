@@ -1,0 +1,1219 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Components &middot; Bootstrap</title>
+    <link rel="stylesheet" href="../../dist/css/bootstrap.css">
+    <link href="less/theme.less" rel="stylesheet/less" type="text/css"><!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <link href="docs.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+     <a class="sr-only" href="#content">Skip navigation</a> <!-- Docs master nav -->
+
+    <header class="navbar navbar-inverse navbar-fixed-top" role="banner">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse"><span class="sr-only">Toggle navigation</span></button> <a href="./" class="navbar-brand">Bootstrap Theme Kitchen Sink</a>
+            </div>
+
+            <nav class="collapse navbar-collapse" role="navigation">
+                <ul class="nav navbar-nav nav-pills">
+                    <li><a href="css.html">CSS</a></li>
+
+                    <li class="active"><a href="components.html">Components</a></li>
+
+                    <li><a href="js.html">JavaScript</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container bs-docs-container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="bs-sidebar hidden-print" role="complementary">
+                    <ul class="nav bs-sidenav">
+                        <li><a href="#dropdowns">Dropdowns</a></li>
+
+                        <li><a href="#btn-groups">Button groups</a></li>
+
+                        <li><a href="#btn-dropdowns">Button dropdowns</a></li>
+
+                        <li><a href="#input-groups">Input groups</a></li>
+
+                        <li><a href="#nav">Navs</a></li>
+
+                        <li><a href="#navbar">Navbar</a></li>
+
+                        <li><a href="#breadcrumbs">Breadcrumbs</a></li>
+
+                        <li><a href="#pagination">Pagination</a></li>
+
+                        <li><a href="#labels">Labels</a></li>
+
+                        <li><a href="#badges">Badges</a></li>
+
+                        <li><a href="#jumbotron">Jumbotron</a></li>
+
+                        <li><a href="#page-header">Page header</a></li>
+
+                        <li><a href="#thumbnails">Thumbnails</a></li>
+
+                        <li><a href="#alerts">Alerts</a></li>
+
+                        <li><a href="#progress">Progress bars</a></li>
+
+                        <li><a href="#media">Media object</a></li>
+
+                        <li><a href="#list-group">List group</a></li>
+
+                        <li><a href="#panels">Panels</a></li>
+
+                        <li><a href="#wells">Wells</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-9" role="main">
+                <!-- Dropdowns
+  ================================================== -->
+
+                <div class="bs-docs-section">
+                    <div class="page-header">
+                        <h1 id="dropdowns">Dropdowns</h1>
+                    </div>
+
+                    <div class="bs-example">
+                        <div class="dropdown clearfix">
+                            <a id="dropdownMenu1" href="#" role="button" class="sr-only dropdown-toggle" data-toggle="dropdown">Dropdown</a>
+
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                <li role="presentation" class="dropdown-header">Dropdown header</li>
+
+                                <li role="presentation" class="active"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+
+                                <li role="presentation" class="disabled"><a role="menuitem" tabindex="-1" href="#">Disabled link</a></li>
+
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+
+                                <li role="presentation" class="dropdown-header">Dropdown header</li>
+
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+                            </ul>
+                        </div>
+                    </div><!-- /example -->
+                </div><!-- Button Groups
+  ================================================== -->
+
+                <div class="bs-docs-section">
+                    <div class="page-header">
+                        <h1 id="btn-groups">Button groups</h1>
+                    </div>
+
+                    <div class="bs-example">
+                        <div class="btn-toolbar" style="margin: 0;">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-default">1</button> <button type="button" class="btn btn-default">2</button> <button type="button" class="btn btn-default">3</button> <button type="button" class="btn btn-default">4</button>
+                            </div>
+
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-default">5</button> <button type="button" class="btn btn-default">6</button> <button type="button" class="btn btn-default">7</button>
+                            </div>
+
+                            <div class="btn-group">
+                                <button id="btnGroupDrop1" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">8</button>
+
+                                <ul class="dropdown-menu" role="menu" aria-labelledby="btnGroupDrop1">
+                                    <li><a href="#">Dropdown link</a></li>
+
+                                    <li><a href="#">Dropdown link</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- Split button dropdowns
+  ================================================== -->
+
+                <div class="bs-docs-section">
+                    <div class="page-header">
+                        <h1 id="btn-dropdowns">Button dropdowns</h1>
+                    </div>
+
+                    <div class="bs-example">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Default</button>
+
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Action</a></li>
+
+                                <li><a href="#">Another action</a></li>
+
+                                <li><a href="#">Something else here</a></li>
+
+                                <li><a href="#">Separated link</a></li>
+                            </ul>
+                        </div><!-- /btn-group -->
+
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Primary</button>
+
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Action</a></li>
+
+                                <li><a href="#">Another action</a></li>
+
+                                <li><a href="#">Something else here</a></li>
+
+                                <li><a href="#">Separated link</a></li>
+                            </ul>
+                        </div><!-- /btn-group -->
+
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">Success</button>
+
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Action</a></li>
+
+                                <li><a href="#">Another action</a></li>
+
+                                <li><a href="#">Something else here</a></li>
+
+                                <li><a href="#">Separated link</a></li>
+                            </ul>
+                        </div><!-- /btn-group -->
+
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">Info</button>
+
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Action</a></li>
+
+                                <li><a href="#">Another action</a></li>
+
+                                <li><a href="#">Something else here</a></li>
+
+                                <li><a href="#">Separated link</a></li>
+                            </ul>
+                        </div><!-- /btn-group -->
+
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">Warning</button>
+
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Action</a></li>
+
+                                <li><a href="#">Another action</a></li>
+
+                                <li><a href="#">Something else here</a></li>
+
+                                <li><a href="#">Separated link</a></li>
+                            </ul>
+                        </div><!-- /btn-group -->
+
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">Danger</button>
+
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Action</a></li>
+
+                                <li><a href="#">Another action</a></li>
+
+                                <li><a href="#">Something else here</a></li>
+
+                                <li><a href="#">Separated link</a></li>
+                            </ul>
+                        </div><!-- /btn-group -->
+                    </div>
+
+                    <h3 id="btn-dropdowns-split">Split button dropdowns</h3>
+
+                    <div class="bs-example">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default">Default</button>
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Action</a></li>
+
+                                <li><a href="#">Another action</a></li>
+
+                                <li><a href="#">Something else here</a></li>
+
+                                <li><a href="#">Separated link</a></li>
+                            </ul>
+                        </div><!-- /btn-group -->
+
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary">Primary</button>
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Action</a></li>
+
+                                <li><a href="#">Another action</a></li>
+
+                                <li><a href="#">Something else here</a></li>
+
+                                <li><a href="#">Separated link</a></li>
+                            </ul>
+                        </div><!-- /btn-group -->
+
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-success">Success</button>
+                            <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Action</a></li>
+
+                                <li><a href="#">Another action</a></li>
+
+                                <li><a href="#">Something else here</a></li>
+
+                                <li><a href="#">Separated link</a></li>
+                            </ul>
+                        </div><!-- /btn-group -->
+
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-info">Info</button>
+                            <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Action</a></li>
+
+                                <li><a href="#">Another action</a></li>
+
+                                <li><a href="#">Something else here</a></li>
+
+                                <li><a href="#">Separated link</a></li>
+                            </ul>
+                        </div><!-- /btn-group -->
+
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-warning">Warning</button>
+                            <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Action</a></li>
+
+                                <li><a href="#">Another action</a></li>
+
+                                <li><a href="#">Something else here</a></li>
+
+                                <li><a href="#">Separated link</a></li>
+                            </ul>
+                        </div><!-- /btn-group -->
+
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-danger">Danger</button>
+                            <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Action</a></li>
+
+                                <li><a href="#">Another action</a></li>
+
+                                <li><a href="#">Something else here</a></li>
+
+                                <li><a href="#">Separated link</a></li>
+                            </ul>
+                        </div><!-- /btn-group -->
+                    </div>
+
+                    <h3 id="btn-dropdowns-dropup">Dropup variation</h3>
+
+                    <div class="bs-example">
+                        <div class="btn-toolbar">
+                            <div class="btn-group dropup">
+                                <button type="button" class="btn btn-default">Dropup</button>
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">Action</a></li>
+
+                                    <li><a href="#">Another action</a></li>
+
+                                    <li><a href="#">Something else here</a></li>
+
+                                    <li><a href="#">Separated link</a></li>
+                                </ul>
+                            </div><!-- /btn-group -->
+
+                            <div class="btn-group dropup">
+                                <button type="button" class="btn btn-primary">Right dropup</button>
+                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+
+                                <ul class="dropdown-menu pull-right" role="menu">
+                                    <li><a href="#">Action</a></li>
+
+                                    <li><a href="#">Another action</a></li>
+
+                                    <li><a href="#">Something else here</a></li>
+
+                                    <li><a href="#">Separated link</a></li>
+                                </ul>
+                            </div><!-- /btn-group -->
+                        </div>
+                    </div><!-- /example -->
+                </div><!-- Input groups
+  ================================================== -->
+
+                <div class="bs-docs-section">
+                    <div class="page-header">
+                        <h1 id="input-groups">Input groups</h1>
+                    </div>
+
+                    <form class="bs-example bs-example-form" role="form">
+                        <div class="input-group">
+                            <span class="input-group-addon">$</span> <input type="text" class="form-control"> <span class="input-group-addon">.00</span>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><input type="checkbox"></span> <input type="text" class="form-control">
+                                </div><!-- /input-group -->
+                            </div><!-- /.col-lg-6 -->
+
+                            <div class="col-lg-6">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><input type="radio"></span> <input type="text" class="form-control">
+                                </div><!-- /input-group -->
+                            </div><!-- /.col-lg-6 -->
+                        </div><!-- /.row -->
+
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="input-group">
+                                    <span class="input-group-btn"><button class="btn btn-default" type="button"><span class="input-group-btn"><span class="input-group-btn"><span class="input-group-btn">Go!</span></span></span></button></span> <input type="text" class="form-control">
+                                </div><!-- /input-group -->
+                            </div><!-- /.col-lg-6 -->
+
+                            <div class="col-lg-6">
+                                <div class="input-group">
+                                    <input type="text" class="form-control">
+
+                                    <div class="input-group-btn">
+                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Action</button>
+
+                                        <ul class="dropdown-menu pull-right" role="menu">
+                                            <li><a href="#">Action</a></li>
+
+                                            <li><a href="#">Another action</a></li>
+
+                                            <li><a href="#">Something else here</a></li>
+
+                                            <li><a href="#">Separated link</a></li>
+                                        </ul>
+                                    </div><!-- /btn-group -->
+                                </div><!-- /input-group -->
+                            </div><!-- /.col-lg-6 -->
+                        </div><!-- /.row -->
+                    </form>
+
+                    <h2 id="input-groups-buttons-segmented">Segmented buttons</h2>
+
+                    <form class="bs-example bs-example-form" role="form">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="input-group">
+                                    <div class="input-group-btn">
+                                        <button type="button" class="btn btn-primary" tabindex="-1">Action</button>
+                                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><a href="#">Action</a></li>
+
+                                            <li><a href="#">Another action</a></li>
+
+                                            <li><a href="#">Something else here</a></li>
+
+                                            <li><a href="#">Separated link</a></li>
+                                        </ul>
+                                    </div><input type="text" class="form-control">
+                                </div><!-- /.input-group -->
+                            </div><!-- /.col-lg-6 -->
+
+                            <div class="col-lg-6">
+                                <div class="input-group">
+                                    <input type="text" class="form-control">
+
+                                    <div class="input-group-btn">
+                                        <button type="button" class="btn btn-default" tabindex="-1">Action</button>
+                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+
+                                        <ul class="dropdown-menu pull-right" role="menu">
+                                            <li><a href="#">Action</a></li>
+
+                                            <li><a href="#">Another action</a></li>
+
+                                            <li><a href="#">Something else here</a></li>
+
+                                            <li><a href="#">Separated link</a></li>
+                                        </ul>
+                                    </div>
+                                </div><!-- /.input-group -->
+                            </div><!-- /.col-lg-6 -->
+                        </div><!-- /.row -->
+                    </form>
+                </div><!-- Navs
+  ================================================== -->
+
+                <div class="bs-docs-section">
+                    <div class="page-header">
+                        <h1 id="nav">Navs</h1>
+                    </div>
+
+                    <h2 id="nav-tabs">Tabs</h2>
+
+                    <div class="bs-example">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a href="#">Home</a></li>
+
+                            <li><a href="#">Profile</a></li>
+
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Dropdown</a>
+
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">Action</a></li>
+
+                                    <li><a href="#">Another action</a></li>
+
+                                    <li><a href="#">Something else here</a></li>
+
+                                    <li><a href="#">Separated link</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <h2 id="nav-pills">Pills</h2>
+
+                    <div class="bs-example">
+                        <ul class="nav nav-pills">
+                            <li class="active"><a href="#">Home</a></li>
+
+                            <li><a href="#">Help</a></li>
+
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Dropdown</a>
+
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">Action</a></li>
+
+                                    <li><a href="#">Another action</a></li>
+
+                                    <li><a href="#">Something else here</a></li>
+
+                                    <li><a href="#">Separated link</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div><!-- /example -->
+
+                    <div class="bs-example">
+                        <ul class="nav nav-pills nav-stacked" style="max-width: 300px;">
+                            <li class="active"><a href="#">Home</a></li>
+
+                            <li><a href="#">Profile</a></li>
+
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Dropdown</a>
+
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">Action</a></li>
+
+                                    <li><a href="#">Another action</a></li>
+
+                                    <li><a href="#">Something else here</a></li>
+
+                                    <li><a href="#">Separated link</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div><!-- Navbar
+  ================================================== -->
+
+                <div class="bs-docs-section">
+                    <div class="page-header">
+                        <h1 id="navbar">Navbar</h1>
+                    </div>
+
+                    <div class="bs-example">
+                        <nav class="navbar navbar-default" role="navigation">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"><span class="sr-only">Toggle navigation</span></button> <a class="navbar-brand" href="#">Brand</a>
+                            </div><!-- Collect the nav links, forms, and other content for toggling -->
+
+                            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                                <ul class="nav navbar-nav">
+                                    <li class="active"><a href="#">Link</a></li>
+
+                                    <li><a href="#">Link</a></li>
+                                </ul>
+
+                                <form class="navbar-form navbar-left" role="search">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Search">
+                                    </div><button type="submit" class="btn btn-default">Submit</button>
+                                </form>
+
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li><span class="navbar-text">Signed in as Mark Otto</span></li>
+
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown</a>
+
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><a href="#">Action</a></li>
+
+                                            <li><a href="#">Another action</a></li>
+
+                                            <li><a href="#">Something else here</a></li>
+
+                                            <li><a href="#">Separated link</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div><!-- /.navbar-collapse -->
+                        </nav>
+                    </div>
+
+                    <h2 id="navbar-inverted">Inverted navbar</h2>
+
+                    <div class="bs-example">
+                        <nav class="navbar navbar-inverse" role="navigation">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"><span class="sr-only">Toggle navigation</span></button> <a class="navbar-brand" href="#">Brand</a>
+                            </div><!-- Collect the nav links, forms, and other content for toggling -->
+
+                            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                                <ul class="nav navbar-nav">
+                                    <li class="active"><a href="#">Link</a></li>
+
+                                    <li><a href="#">Link</a></li>
+                                </ul>
+
+                                <form class="navbar-form navbar-left" role="search">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Search">
+                                    </div><button type="submit" class="btn btn-default">Submit</button>
+                                </form>
+
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li><span class="navbar-text">Signed in as Mark Otto</span></li>
+
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown</a>
+
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><a href="#">Action</a></li>
+
+                                            <li><a href="#">Another action</a></li>
+
+                                            <li><a href="#">Something else here</a></li>
+
+                                            <li><a href="#">Separated link</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div><!-- /.navbar-collapse -->
+                        </nav>
+                    </div>
+                </div><!-- Breadcrumbs
+  ================================================== -->
+
+                <div class="bs-docs-section">
+                    <div class="page-header">
+                        <h1 id="breadcrumbs">Breadcrumbs</h1>
+                    </div>
+
+                    <div class="bs-example">
+                        <ol class="breadcrumb" style="margin-bottom: 5px;">
+                            <li><a href="#">Home</a></li>
+
+                            <li><a href="#">Library</a></li>
+
+                            <li class="active">Data</li>
+                        </ol>
+                    </div>
+                </div><!-- Pagination
+  ================================================== -->
+
+                <div class="bs-docs-section">
+                    <div class="page-header">
+                        <h1 id="pagination">Pagination</h1>
+                    </div>
+
+                    <div class="bs-example">
+                        <ul class="pagination">
+                            <li class="disabled"><a href="#">&laquo;</a></li>
+
+                            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+
+                            <li><a href="#">2</a></li>
+
+                            <li><a href="#">3</a></li>
+
+                            <li><a href="#">4</a></li>
+
+                            <li><a href="#">5</a></li>
+
+                            <li><a href="#">&raquo;</a></li>
+                        </ul>
+                    </div>
+
+                    <h2 id="pagination-pager">Pager</h2>
+
+                    <div class="bs-example">
+                        <ul class="pager">
+                            <li class="previous disabled"><a href="#">&larr; Older</a></li>
+
+                            <li class="next"><a href="#">Newer &rarr;</a></li>
+                        </ul>
+                    </div>
+                </div><!-- Labels
+  ================================================== -->
+
+                <div class="bs-docs-section">
+                    <div class="page-header">
+                        <h1 id="labels">Labels</h1>
+                    </div>
+
+                    <div class="bs-example">
+                        <span class="label label-default">Default</span> <span class="label label-primary">Primary</span> <span class="label label-success">Success</span> <span class="label label-info">Info</span> <span class="label label-warning">Warning</span> <span class="label label-danger">Danger</span>
+                    </div>
+                </div><!-- Badges
+  ================================================== -->
+
+                <div class="bs-docs-section">
+                    <div class="page-header">
+                        <h1 id="badges">Badges</h1>
+                    </div>
+
+                    <div class="bs-example">
+                        <ul class="nav nav-pills">
+                            <li class="active"><a href="#">Home <span class="badge">42</span></a></li>
+
+                            <li><a href="#">Profile</a></li>
+
+                            <li><a href="#">Messages <span class="badge">3</span></a></li>
+                        </ul><br>
+
+                        <ul class="nav nav-pills nav-stacked" style="max-width: 260px;">
+                            <li class="active"><a href="#"><span class="badge pull-right">42</span> Home</a></li>
+
+                            <li><a href="#">Profile</a></li>
+
+                            <li><a href="#"><span class="badge pull-right">3</span> Messages</a></li>
+                        </ul>
+                    </div>
+                </div><!-- Jumbotron
+  ================================================== -->
+
+                <div class="bs-docs-section">
+                    <div class="page-header">
+                        <h1 id="jumbotron">Jumbotron</h1>
+                    </div>
+
+                    <div class="bs-example">
+                        <div class="jumbotron">
+                            <h1>Hello, world!</h1>
+
+                            <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+
+                            <p><a class="btn btn-primary btn-lg">Learn more</a></p>
+                        </div>
+                    </div>
+                </div><!-- Page header
+  ================================================== -->
+
+                <div class="bs-docs-section">
+                    <div class="page-header">
+                        <h1 id="page-header">Page header</h1>
+                    </div>
+
+                    <div class="bs-example">
+                        <div class="page-header">
+                            <h1>Example page header <small>Subtext for header</small></h1>
+                        </div>
+                    </div>
+                </div><!-- Thumbnails
+  ================================================== -->
+
+                <div class="bs-docs-section">
+                    <div class="page-header">
+                        <h1 id="thumbnails">Thumbnails</h1>
+                    </div>
+
+                    <div class="bs-example">
+                        <div class="row">
+                            <div class="col-sm-6 col-md-3">
+                                <div class="thumbnail">
+                                    <img src="http://placehold.it/300x200" alt="Generic placeholder thumbnail">
+
+                                    <div class="caption">
+                                        <h3>Thumbnail label</h3>
+
+                                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+
+                                        <p><a href="#" class="btn btn-primary">Button</a> <a href="#" class="btn btn-default">Button</a></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 col-md-3">
+                                <div class="thumbnail">
+                                    <img src="http://placehold.it/300x200" alt="Generic placeholder thumbnail">
+
+                                    <div class="caption">
+                                        <h3>Thumbnail label</h3>
+
+                                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+
+                                        <p><a href="#" class="btn btn-primary">Button</a> <a href="#" class="btn btn-default">Button</a></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 col-md-3">
+                                <div class="thumbnail">
+                                    <img src="http://placehold.it/300x200" alt="Generic placeholder thumbnail">
+
+                                    <div class="caption">
+                                        <h3>Thumbnail label</h3>
+
+                                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+
+                                        <p><a href="#" class="btn btn-primary">Button</a> <a href="#" class="btn btn-default">Button</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- /.bs-example -->
+                </div><!-- Alerts
+  ================================================== -->
+
+                <div class="bs-docs-section">
+                    <div class="page-header">
+                        <h1 id="alerts">Alerts</h1>
+                    </div>
+
+                    <div class="bs-example">
+                        <div class="alert alert-success">
+                            <strong>Well done!</strong> You successfully read <a href="#" class="alert-link">this important alert message</a>.
+                        </div>
+
+                        <div class="alert alert-info">
+                            <strong>Heads up!</strong> This <a href="#" class="alert-link">alert needs your attention</a>, but it's not super important.
+                        </div>
+
+                        <div class="alert alert-warning">
+                            <strong>Warning!</strong> Best check yo self, you're <a href="#" class="alert-link">not looking too good</a>.
+                        </div>
+
+                        <div class="alert alert-danger">
+                            <strong>Oh snap!</strong> <a href="#" class="alert-link">Change a few things up</a> and try submitting again.
+                        </div>
+                    </div>
+                </div><!-- Progress bars
+  ================================================== -->
+
+                <div class="bs-docs-section">
+                    <div class="page-header">
+                        <h1 id="progress">Progress bars</h1>
+                    </div>
+
+                    <div class="bs-example">
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                <span class="sr-only">60% Complete</span>
+                            </div>
+                        </div>
+
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                <span class="sr-only">40% Complete (success)</span>
+                            </div>
+                        </div>
+
+                        <div class="progress progress-striped">
+                            <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                                <span class="sr-only">20% Complete</span>
+                            </div>
+                        </div>
+
+                        <div class="progress progress-striped active">
+                            <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                                <span class="sr-only">60% Complete (warning)</span>
+                            </div>
+                        </div>
+
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-danger" style="width: 40%">
+                                <span class="sr-only">35% Complete (success)</span>
+                            </div>
+
+                            <div class="progress-bar progress-bar-info" style="width: 10%">
+                                <span class="sr-only">20% Complete (warning)</span>
+                            </div>
+
+                            <div class="progress-bar progress-bar-success" style="width: 25%">
+                                <span class="sr-only">10% Complete (danger)</span>
+                            </div>
+                        </div>
+
+                        <div class="progress progress-striped active">
+                            <div class="progress-bar progress-bar-success" style="width: 35%">
+                                <span class="sr-only">35% Complete (success)</span>
+                            </div>
+
+                            <div class="progress-bar progress-bar-warning" style="width: 20%">
+                                <span class="sr-only">20% Complete (warning)</span>
+                            </div>
+
+                            <div class="progress-bar progress-bar-danger" style="width: 10%">
+                                <span class="sr-only">10% Complete (danger)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- Media object
+  ================================================== -->
+
+                <div class="bs-docs-section">
+                    <div class="page-header">
+                        <h1 id="media">Media object</h1>
+                    </div>
+
+                    <div class="bs-example">
+                        <ul class="media-list">
+                            <li class="media">
+                                <a class="pull-left" href="#"><img class="media-object" src="http://placehold.it/64x64" alt="Generic placeholder image"></a>
+
+                                <div class="media-body">
+                                    <h4 class="media-heading">Media heading</h4>
+
+                                    <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p><!-- Nested media object -->
+
+                                    <div class="media">
+                                        <a class="pull-left" href="#"><img class="media-object" src="http://placehold.it/64x64" alt="Generic placeholder image"></a>
+
+                                        <div class="media-body">
+                                            <h4 class="media-heading">Nested media heading</h4>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. <!-- Nested media object -->
+
+                                            <div class="media">
+                                                <a class="pull-left" href="#"><img class="media-object" src="http://placehold.it/64x64" alt="Generic placeholder image"></a>
+
+                                                <div class="media-body">
+                                                    <h4 class="media-heading">Nested media heading</h4>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- Nested media object -->
+
+                                    <div class="media">
+                                        <a class="pull-left" href="#"><img class="media-object" src="http://placehold.it/64x64" alt="Generic placeholder image"></a>
+
+                                        <div class="media-body">
+                                            <h4 class="media-heading">Nested media heading</h4>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="media">
+                                <a class="pull-right" href="#"><img class="media-object" src="http://placehold.it/64x64" alt="Generic placeholder image"></a>
+
+                                <div class="media-body">
+                                    <h4 class="media-heading">Media heading</h4>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div><!-- List group
+  ================================================== -->
+
+                <div class="bs-docs-section">
+                    <div class="page-header">
+                        <h1 id="list-group">List group</h1>
+                    </div>
+
+                    <div class="bs-example">
+                        <div class="col-lg-6">
+                            <ul class="list-group">
+                                <li class="list-group-item">Cras justo odio</li>
+
+                                <li class="list-group-item"><span class="badge">14</span> Cras justo odio</li>
+
+                                <li class="list-group-item">Dapibus ac facilisis in</li>
+
+                                <li class="list-group-item">Morbi leo risus</li>
+
+                                <li class="list-group-item"><span class="badge">2</span> Dapibus ac facilisis in</li>
+
+                                <li class="list-group-item"><span class="badge">1</span> Morbi leo risus</li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="list-group">
+                                <a href="#" class="list-group-item active">Cras justo odio</a> <a href="#" class="list-group-item">Dapibus ac facilisis in</a> <a href="#" class="list-group-item">Morbi leo risus</a> <a href="#" class="list-group-item">Porta ac consectetur ac</a> <a href="#" class="list-group-item">Vestibulum at eros</a>
+                            </div>
+                        </div>
+
+                        <div class="clear clearfix"></div>
+                    </div>
+
+                    <div class="bs-example">
+                        <div class="list-group">
+                            <a href="#" class="list-group-item active">
+                                <h4 class="list-group-item-heading">List group item heading</h4>
+                                <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                            </a>
+                            <a href="#" class="list-group-item">
+                                <h4 class="list-group-item-heading">List group item heading</h4>
+                                <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                            </a>
+                            <a href="#" class="list-group-item">
+                                <h4 class="list-group-item-heading">List group item heading</h4>
+                                <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                            </a>
+                        </div>
+                    </div>
+                </div><!-- Panels
+  ================================================== -->
+
+                <div class="bs-docs-section">
+                    <div class="page-header">
+                        <h1 id="panels">Panels</h1>
+                    </div>
+
+                    <div class="bs-example">
+                        <div class="col-lg-6">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Panel title</h3>
+                                </div>
+
+                                <div class="panel-body">
+                                    Panel content
+                                </div>
+
+                                <div class="panel-footer">
+                                    Panel footer
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="panel panel-primary">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Panel title</h3>
+                                </div>
+
+                                <div class="panel-body">
+                                    Panel content
+                                </div>
+
+                                <div class="panel-footer">
+                                    Panel footer
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="clear clearfix"></div>
+
+                        <div class="col-lg-6">
+                            <div class="panel panel-success">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Panel title</h3>
+                                </div>
+
+                                <div class="panel-body">
+                                    Panel content
+                                </div>
+
+                                <div class="panel-footer">
+                                    Panel footer
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="panel panel-info">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Panel title</h3>
+                                </div>
+
+                                <div class="panel-body">
+                                    Panel content
+                                </div>
+
+                                <div class="panel-footer">
+                                    Panel footer
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="clear clearfix"></div>
+
+                        <div class="col-lg-6">
+                            <div class="panel panel-warning">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Panel title</h3>
+                                </div>
+
+                                <div class="panel-body">
+                                    Panel content
+                                </div>
+
+                                <div class="panel-footer">
+                                    Panel footer
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="panel panel-danger">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Panel title</h3>
+                                </div>
+
+                                <div class="panel-body">
+                                    Panel content
+                                </div>
+
+                                <div class="panel-footer">
+                                    Panel footer
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="clear clearfix"></div>
+                    </div>
+
+                    <div class="bs-example">
+                        <div class="panel panel-default">
+                            <!-- Default panel contents -->
+
+                            <div class="panel-heading">
+                                Panel heading
+                            </div>
+
+                            <div class="panel-body">
+                                <p>Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                            </div><!-- Table -->
+
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+
+                                        <th>First Name</th>
+
+                                        <th>Last Name</th>
+
+                                        <th>Username</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+
+                                        <td>Mark</td>
+
+                                        <td>Otto</td>
+
+                                        <td>@mdo</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>2</td>
+
+                                        <td>Jacob</td>
+
+                                        <td>Thornton</td>
+
+                                        <td>@fat</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>3</td>
+
+                                        <td>Larry</td>
+
+                                        <td>the Bird</td>
+
+                                        <td>@twitter</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="bs-example">
+                        <div class="panel panel-default">
+                            <!-- Default panel contents -->
+
+                            <div class="panel-heading">
+                                Panel heading
+                            </div>
+
+                            <div class="panel-body">
+                                <p>Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                            </div><!-- List group -->
+
+                            <ul class="list-group">
+                                <li class="list-group-item">Cras justo odio</li>
+
+                                <li class="list-group-item">Dapibus ac facilisis in</li>
+
+                                <li class="list-group-item">Morbi leo risus</li>
+
+                                <li class="list-group-item">Porta ac consectetur ac</li>
+
+                                <li class="list-group-item">Vestibulum at eros</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div><!-- Wells
+  ================================================== -->
+
+                <div class="bs-docs-section">
+                    <div class="page-header">
+                        <h1 id="wells">Wells</h1>
+                    </div>
+
+                    <div class="bs-example">
+                        <div class="well">
+                            Look, I'm in a well!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- JS and analytics only. -->
+        <!-- Bootstrap core JavaScript
+================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/less.js/1.4.1/less.min.js">
+</script> <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js">
+</script> <script type="text/javascript">
+!window.jQuery && document.write('<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"><\/script>')
+        </script> <script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js">
+</script> <script type="text/javascript" src="docs.js">
+</script>
+    </div>
+</body>
+</html>
